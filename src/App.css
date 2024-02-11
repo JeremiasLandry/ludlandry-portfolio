@@ -1220,6 +1220,7 @@ nav a{
   align-content: center;
 }
 /* NAVBAR RESPONSIVE*/
+
 @media screen and (max-width: 1279px){
   nav.nav-lg ul{
     display: flex;
@@ -1266,19 +1267,96 @@ nav a{
   .nav-md .nombre{
     justify-content: flex-start;
     margin-left: 20px;
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
   nav.nav-md h1{
-    font-size: 10px;
+    font-size: 17px;
     font-weight: 500;
+  }
+  nav hr{
+    display: none;
+  }
+  .navContact{
+    display: none;
+    width: 0;
+    height: 0;
+    justify-self:auto;
+    align-self: auto;
+    margin: auto;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navLinksGroup{
+    align-self: flex-end !important;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 800px){
+  nav h1{
+    font-size: 17px !important;
+    margin-left:0;
+  }
+  .nombre{
+    margin-left: 15px;
   }
 }
 
+.menu {
+  
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 20;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: 3px solid black;
+  border-top: none;
+  background-color: #E4DDCF;
+  border-top-left-radius:10px;
+  border-top-right-radius:20px;
+  min-height: 150px;
+  min-width:100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.menu ul{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+ 
+.menu .responsive-link-nav{
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: transform 1ms ease-in-out;
+}
+.responsive-link-nav:hover{
+  transform: scale(.9);
+  text-decoration: line-through;
+}
+.hamburger-icon{
+  max-width: 40px;
+  max-height: 40px;
+  padding-right: 10px;
+  cursor: pointer;
+  padding-top: 10px;
 
-
-/* .navContact{
-  justify-content: flex-end;
-  align-self: flex-end;
-  margin-right: 30px;
-} */
-
+}
+.menu-ctn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  min-height: 60px;
+  max-height: 500px;
+  
+}
