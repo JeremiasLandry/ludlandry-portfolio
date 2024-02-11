@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import '../../App.css';
 import menuIcon from './hamburger.png';
 
+function scrollToSection(sectionId) {
+  const sectionElement = document.getElementById(sectionId);
+  if (sectionElement) {
+    sectionElement.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 const MenuHamburguesa = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);
 
@@ -21,18 +28,18 @@ const MenuHamburguesa = () => {
           {/* Contenido del menú */}
           <ul>
               <li className='responsive-link-nav'>
-                <Link to="#AboutMe">Sobre mí</Link>
+                <Link onClick={() => scrollToSection('AboutMe')}>Sobre mí</Link>
               </li>
       
               <li className='responsive-link-nav'>
-                <Link to="#Skills">Habilidades</Link>
+                <Link onClick={() => scrollToSection('Skills')}>Habilidades</Link>
               </li>
             
               <li className='responsive-link-nav'>
-                <Link to="#Projects">Proyectos</Link>
+                <Link onClick={() => scrollToSection('Projects')}>Proyectos</Link>
               </li>
               <li className='responsive-link-nav'>
-                <Link to="#Projects">Contacto</Link>
+                <Link  onClick={() => scrollToSection('Footer')}>Contacto</Link>
               </li>
           </ul>
         </div>
@@ -98,21 +105,21 @@ const NavBar = () => {
         ) : (
           <div className='navLinksGroup'>
             <li>
-              <Link to="#AboutMe">Sobre mí</Link>
+              <Link to="#"  onClick={() => scrollToSection('AboutMe')}>Sobre mí</Link>
             </li>
             <span>|</span>
             <li>
-              <Link to="#Skills">Habilidades</Link>
+              <Link to="#"  onClick={() => scrollToSection('Skills')}>Habilidades</Link>
             </li>
             <span>|</span>
             <li>
-              <Link to="#Projects">Proyectos</Link>
+              <Link to="#"  onClick={() => scrollToSection('Projects')}>Proyectos</Link>
             </li>
             {pantalla === 'md' || pantalla === 'xs' || pantalla === 'sm' ? (
               <>
                 <span>|</span>
                 <li>
-                  <Link to="/contact">Contacto</Link>
+                  <Link to="#"  onClick={() => scrollToSection('Footer')}>Contacto</Link>
                 </li>
               </>
             ) : ''}
@@ -125,7 +132,7 @@ const NavBar = () => {
             </div>
             <div className='navContact'>
               <li>
-                <Link to="/contact" className='contact-button'>Contacto</Link>
+                <Link to="#"  onClick={() => scrollToSection('Footer')} className='contact-button'>Contacto</Link>
               </li>
             </div>
           </>
