@@ -1222,7 +1222,26 @@ nav a{
   align-content: center;
 }
 /* NAVBAR RESPONSIVE*/
-
+@media screen and (max-width: 1310px){
+  .about-me-pic{
+    max-width: 50%;
+    width: 40%;
+    margin: 0 5%;
+    align-self: flex-end;
+  }
+  .about-me-pic span{
+    width: 10%;
+    
+  }
+  .about-me-pic img{
+    width: 90%;
+  }
+  
+  .about-me-description .card.fatCard.boxOnly{
+    width: 90% !important;
+    margin: 0 5% 0 0;
+  }
+}
 @media screen and (max-width: 1279px){
   nav.nav-lg ul{
     display: flex;
@@ -1315,6 +1334,9 @@ nav a{
     min-height: 300px;
     display: none;
   }
+  .about-me-name{
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 900px){
   #Home .card:nth-child(2) .presentationCard span{
@@ -1346,6 +1368,30 @@ nav a{
     max-height: 100px;
   }
 
+}
+@media screen and (max-width:900px) {
+  .about-me-description .card.fatCard.boxOnly .descriptionBox.fatBox{
+    /* flex-direction: column !important; */
+    font-size: 11px;
+  }
+  .about-me-description .card.fatCard.boxOnly .descriptionBox.fatBox .arrowButton{
+    /* flex-direction: column !important; */
+    width: 30px;
+    height:30px;
+  }
+  .about-me-description .card.fatCard.boxOnly .descriptionBox.fatBox .arrowButton img{
+    /* flex-direction: column !important; */
+    width: 15px;
+    height:15px;
+  }
+}
+@media screen and (max-width: 855px) {
+  .about-me-name{
+    font-size: 50px;
+  }
+  .about-me-star{
+    padding: 0 10px;
+  }
 }
 @media screen and (max-width: 800px){
   nav h1{
@@ -1460,4 +1506,41 @@ nav a{
     #Home.nav-xs .presentationDescription{
       background-color: #fff;
     }
+    .about-me-content{
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      max-height: 1000px;
+    }
+    .about-me-description{
+      max-width: 90%;
+      align-items: center;
+    }
+    .about-me-pic{
+      align-self: center;
+    }
+    .about-me-description .card.fatCard.boxOnly{
+      width: 100% !important;
+      margin:0 !important;
+      font-size: 14px !important;
+    }
+    .about-me-description .card.fatCard.boxOnly .descriptionBox.fatBox{
+      font-size: 14px !important;
+      padding: 20px 10px 20px 20px;
+    }
+    .about-me-name{
+      font-size: 70px;
+      padding-bottom: 50px;
+    }
+    .about-me-pic{
+      max-width: 100%;
+      width: 90%;
+      margin-top: 50px;
+    }
+}
+@media screen and (max-width:510px) {
+  .about-me-name{
+    font-size: 50px;
+  }
 }
