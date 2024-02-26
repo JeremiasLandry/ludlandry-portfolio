@@ -1221,6 +1221,10 @@ nav a{
   align-items: center;
   align-content: center;
 }
+
+#Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+  min-height:260px !important;
+}
 /* NAVBAR RESPONSIVE*/
 @media screen and (max-width: 1310px){
   .about-me-pic{
@@ -1241,6 +1245,13 @@ nav a{
     width: 90% !important;
     margin: 0 5% 0 0;
   }
+  #Education .fatCardGallery .card.fatCard{
+    margin: 0 20px !important;
+  }
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:270px !important;
+  }
+  
 }
 @media screen and (max-width: 1279px){
   nav.nav-lg ul{
@@ -1268,11 +1279,33 @@ nav a{
     font-size: 10px;
   }
 }
+@media screen and (max-width: 1227px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:285px !important;
+}
+}
 @media screen and (max-width:1113px){
   .cardThinImg.imgBottom{
     height: 100%;
   }
-  
+  .about-me-separator.withAsterisk{
+    max-width: 400px !important;
+    
+  }
+  .about-me-separator-container{
+    margin:50px 2% ;
+  }
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:315px !important;
+}
+}
+@media screen and (max-width: 1096px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:330px !important;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 1050px){
   nav.nav-md ul{
@@ -1337,6 +1370,27 @@ nav a{
   .about-me-name{
     font-size: 60px;
   }
+  #asterisk{
+    display: none;
+  }
+  .about-me-separator.withAsterisk{
+    max-width: 350px !important;
+    margin:5px 10px;
+  }
+  .about-me-separator-container{
+    margin:50px 2% ;
+  }
+  #Education .articleTitle{
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 1029px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:350px !important;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 900px){
   #Home .card:nth-child(2) .presentationCard span{
@@ -1369,6 +1423,22 @@ nav a{
   }
 
 }
+@media screen and (max-width: 1015px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:415px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 973px){
+  #Education .threetexts span{
+    font-size:12px;
+  }
+}
 @media screen and (max-width:900px) {
   .about-me-description .card.fatCard.boxOnly .descriptionBox.fatBox{
     /* flex-direction: column !important; */
@@ -1384,6 +1454,39 @@ nav a{
     width: 15px;
     height:15px;
   }
+  #Education .about-me-separator.withAsterisk{
+    max-width: 230px !important;
+    margin:5px 25px;
+  }
+  .about-me-separator-container{
+    margin:50px 0 ;
+  }
+  .articleTitle{
+    font-size:30px;
+  }
+ 
+}
+@media screen and (max-width:894px) {
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:420px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width:874px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:440px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 100px;
+  }
 }
 @media screen and (max-width: 855px) {
   .about-me-name{
@@ -1391,6 +1494,32 @@ nav a{
   }
   .about-me-star{
     padding: 0 10px;
+  }
+  #Education .about-me-separator.withAsterisk{
+    max-width: 230px !important;
+    margin:5px 25px;
+  }
+  .about-me-separator-container{
+    margin:50px 0 ;
+  }
+}
+@media screen and (max-width: 823px) {
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:455px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Education .fatCardGallery{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 802px){
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:465px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 800px){
@@ -1400,6 +1529,32 @@ nav a{
   }
   .nombre{
     margin-left: 15px;
+  }
+  .about-me-separator.withAsterisk{
+    max-width: 350px !important;
+    margin:5px 10px;
+  }
+  .about-me-separator-container{
+    margin:50px 2% ;
+  }
+  #Education .fatCardGallery .card.fatCard{
+    margin-bottom: 50px !important;
+  }
+  #Education .fatCardGallery .card.fatCard .descriptionBox.fatBox{
+    min-height:200px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #Education .fatCardGallery{
+    max-height: 1500px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #Education{
+    margin: 0;
   }
 }
 
@@ -1538,9 +1693,36 @@ nav a{
       width: 90%;
       margin-top: 50px;
     }
+    #Education .about-me-separator.withAsterisk{
+      max-width: 230px !important;
+      margin:5px 25px;
+    }
+    .about-me-separator-container{
+      margin:50px 0 ;
+    }
+    .articleTitle{
+      font-size:25px;
+    }
+    .yellow-pill.inicio-pill{
+      margin-left: 0;
+    }
+   
 }
 @media screen and (max-width:510px) {
   .about-me-name{
     font-size: 50px;
+  }
+  #Education .about-me-separator.withAsterisk{
+    max-width: 230px !important;
+    margin:5px 25px;
+  }
+  .about-me-separator-container{
+    margin:50px 0 ;
+  }
+  .articleTitle{
+    font-size:20px;
+  }
+  #asterisk{
+    display: flex;
   }
 }
